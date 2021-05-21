@@ -1,0 +1,396 @@
+/* ------------- */
+header.hero {
+    background-color:gray;
+}
+
+.navbar {
+    background-color:rgba(0, 0, 0, 0.25);
+    height: 88px;
+    border-bottom: 1px solid white;
+    z-index: 1000;
+}
+
+
+.navbar-collapse { 
+    background-color:rgb(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 8px;
+    
+    margin-top: 16px;
+    border: 1px solid white;
+
+} 
+
+.navbar-toggler i {
+    color: white;
+}
+.navbar-toggler:hover i {
+    color: rgba(255, 255, 255, 0.75);
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+.nav-item {
+    margin: 0 16px;
+}
+.nav-link {
+    color: white;
+    padding: 8px 16px !important;
+    border: 1px solid transparent;
+    transition: 0.5s all ease-in-out;
+}
+.nav-link:active {
+    color: white;
+    border: 1px solid transparent;
+}
+.nav-link:hover,
+.nav-link:focus  {
+    background-color:rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    color: white;
+}
+
+
+.navbar-brand img{
+    height: 64px;
+}
+.nav-item img {
+    height: 64px;
+    border: 1px solid transparent;
+    border-radius: 50%;  
+    transition: 0.5s all ease;
+}
+
+.nav-item img:hover {
+    border-color:  white;
+}
+
+.navbar-brand:focus img,
+.navbar-brand:hover img,
+.nav-link:focus img
+.nav-link:hover img {
+    opacity: .75;
+}
+
+.cheveron-down {
+    bottom: 40px;
+}
+i.fa-chevron-down {
+    color: white;
+    font-size: 20px;
+}
+i.fa-chevron-down:focus,
+i.fa-chevron-down:hover {
+    opacity: 0.75;
+}
+.hero {
+    background: url('./../img/hero-acceuil.png') no-repeat center;
+}
+
+
+
+.u-word::after {
+    content: "";
+    background-color:rgb(0, 0, 0, 0.5);
+    height: 30%;
+    position:absolute;
+    left:-4px;
+    top:65%;
+    width: calc(100% + 2rem);
+    z-index:-1;
+}
+h1 {
+    font-family: 'PT', serif;
+}
+@media (min-width:992px){
+    
+    .navbar-collapse {
+        background-color: transparent;
+        border-width: 0;
+        margin-left: 32px;
+    }
+    .nav-link {
+        margin-top: 16px !important;
+    }
+    h1 {
+        font-size: 64px !important;
+    }
+
+    
+}
+/* ------------------------------------------------------------------------------- */
+                                     /* section 1 */
+/* ------------------------------------------------------------------------------- */
+
+
+section {
+    margin: 40px 0 32px;
+}  
+
+.hr {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+}
+
+
+.stack-gallery {
+    height: 400px;
+    overflow: hidden;
+}
+.stack-gallery img{
+    overflow: hidden;
+}
+
+.stack-gallery > div:last-child{
+    width: 400px;
+    height: 320px;
+    background-color: rgba(128, 128, 128, 0.75);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.stack-gallery > div:not(:last-child){
+    width:  320px;
+    height: 200px;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transform: translateY(-50%);
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+
+.villa-description {
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 20px 0px;
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0));
+}
+
+
+.villa-description:hover {
+    background-color: rgba(128, 128, 128, 0);
+    
+}
+
+.villa-description button {
+    padding: 8px 16px !important;
+    /* background-color: #C5A648; */
+    background-color: black;
+}
+.villa-description > div > *{
+    padding-left: 16px;
+}
+.villa-description > div > div:last-child{
+    width: 100%;
+}
+
+/* sm  */
+@media (min-width:576px ){ 
+    
+    .stack-gallery {
+        height: 500px;
+    }
+
+
+    .stack-gallery > div:last-child{
+        width: 640px;
+        height: 480px;
+    }
+
+    .stack-gallery > div:not(:last-child){
+        width:  480px;
+        height: 320px;
+    
+    }
+
+}
+
+/* ------------------------------------------------------------------------------- */
+                                     /* section 2 */
+/* ------------------------------------------------------------------------------- */
+
+
+.gallery-wrapper {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 8px;
+}
+
+.gallery-wrapper img {
+    border-radius: 8px 8px 0 0;
+}
+
+
+ /* here we fix the botton overlapping with other componenets  */
+@media (max-width:576px ){ 
+    .gallery-wrapper button{
+        /* background-color: blue; */
+        width: 100%;
+        margin-top: 16px;
+        display: block;
+        float: none !important;
+
+    }
+}
+
+@media (min-width:768px) and (max-width:900px) { 
+    .gallery-wrapper button{
+        /* background-color: blue; */
+        width: 100%;
+        margin-top: 16px;
+        display: block;
+        float: none !important;
+    }
+}
+
+@media (min-width:1200px){ 
+    .gallery-wrapper button{
+        /* background-color: blue; */
+        width: 100%;
+        margin-top: 16px;
+        display: block;
+        float: none !important;
+    }
+}
+.btn-load-more {
+    /* background-color: #F8F3E1; */
+    color:black;
+    border: 1px solid black !important;
+}
+.btn-load-more:focus,
+.btn-load-more:hover {
+    background-color: black;
+    color: white !important;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+                                     /* section 3 */
+/* ------------------------------------------------------------------------------- */
+
+/* default display  */
+
+.responsive-display {
+    font-size: 1rem;
+}
+
+/* sm */
+@media (min-width:576px ){ 
+    .responsive-display {
+        font-size: 1.6rem;
+    }
+}
+/* md */
+@media (min-width:768px ){ 
+    .responsive-display {
+        font-size: 2.6rem;
+    }
+}
+ /* lg */
+@media (min-width:992px ){ 
+    .responsive-display {
+        font-size: 3rem;
+    }
+
+}
+
+
+/* ------------------------------------------------------------------------------- */
+                                     /* section 4 */
+/* ------------------------------------------------------------------------------- */
+
+
+.card-body {
+    max-width: 320px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+    border-radius: 8px;
+    margin: 40px auto 20px !important;
+    padding: 32px 16px 8px;
+}
+img.avatar {
+    width:  60px;
+    height: 60px;
+}
+.card-text {
+    margin-top: 8px !important;
+    font-size: 14px;
+}
+
+/* ------------------------------------------------------------------------------- */
+                                     /* Footer */
+/* ------------------------------------------------------------------------------- */
+
+footer .logo-img {
+    width: 160px;
+    height: auto;
+}
+footer p.about-company {
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+}
+
+footer .social-media i{
+    color: white;
+    font-size: 32px;
+    margin: 8px;
+}
+
+footer .social-media i:hover{
+    color:rgba(255, 255, 255, 0.5);
+}
+footer .f-list {
+    list-style: none;
+}
+
+footer .f-list li{
+    margin: 8px 0;
+}
+footer .f-list a {
+    color: white;
+    padding: 8px 0;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+footer .f-list a:focus,
+footer .f-list a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+
+footer f-h6 {
+    margin-top: 16px;
+}
+footer .signup-form {
+    font-size: 16px;
+    margin-left: 32px;
+}
+
+footer .signup-form input,
+footer .signup-form button{
+    height: 40px !important;
+    padding: 8px 16px !important;
+    margin-top: 8px !important;
+    border:1px solid white !important;
+    border-radius: 0 !important;
+    outline: none;
+    vertical-align: middle;
+}
+
+footer .signup-form input:focus{
+    box-shadow: 0 0 0 0 !important;
+}
+
+
+
+footer .f-copyrights span{
+    font-size: 12px;
+}
+footer .f-copyrights hr {
+    width: 75%;
+    height: 1px;
+    background-color: white;
+}
